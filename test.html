@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<style>
+p.dotted {border: 1px solid black;width:10%}
+</style>
+<body>
+<p class="dotted" id="demo"></p>
+<p class="dotted" id="demo1"></p>
+<script>
+      let inputDiemtoan = prompt("Enter Diem Toan");
+      let inputDiemly = prompt("Enter Diem Ly");
+      let inputDiemhoa = prompt("Enter Diem Hoa");
+      let Diemtoan = parseInt(inputDiemtoan);
+      let Diemly = parseInt(inputDiemly);
+      let Diemhoa = parseInt(inputDiemhoa);
+      let avg = (Diemtoan + Diemly + Diemhoa) / 3;
+      document.getElementById("demo").innerHTML = "The avg is     " + avg;
+      let sum = Diemtoan + Diemly + Diemhoa;
+      document.getElementById("demo1").innerHTML = "The Sum is     " + sum;
+    </script>
+  </body>
+</html>
